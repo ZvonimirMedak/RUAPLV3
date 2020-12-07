@@ -37,23 +37,20 @@ namespace ContactManager.Services
 
         public Contact[] GetAllContacts()
         {
-            var ctx = HttpContext.Current;
-
-            if (ctx != null)
-            {
-                return (Contact[])ctx.Cache[CacheKey];
-            }
-
             return new Contact[]
-                {
+            {
             new Contact
             {
-                Id = 0,
-                Name = "Placeholder"
+                Id = 1,
+                Name = "Glenn Block"
+            },
+            new Contact
+            {
+                Id = 2,
+                Name = "Dan Roth"
             }
-                };
+            };
         }
-
         public bool SaveContact(Contact contact)
         {
             var ctx = HttpContext.Current;
