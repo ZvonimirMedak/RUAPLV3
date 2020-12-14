@@ -58,14 +58,14 @@ register.</p>
  <?php
 // DB connection info
 // TODO: Update the values for $host, $user, $pwd, and $db //using the values you retrievedearlier from the Azure Portal. $host = "medakruap-mysqldbserver.mysql.database.azure.com";
-//$host = "medakruap-mysqldbserver.mysql.database.azure.com";
-//$user = "ruapAdmin@medakruap-mysqldbserver";
-//$pwd = "A_12345678";
-//$db = "ruapdb";
-$host = "127.0.0.1";
-$user = "medak";
+$host = "medakruap-mysqldbserver.mysql.database.azure.com";
+$user = "ruapAdmin@medakruap-mysqldbserver";
 $pwd = "A_12345678";
-$db = "medakruap-mysqldbserver";
+$db = "ruapdb";
+//$host = "127.0.0.1";
+//$user = "medak";
+//$pwd = "A_12345678";
+//$db = "medakruap-mysqldbserver";
 // Connect to database.
 $conn = mysqli_connect($host, $user, $pwd, $db);
 if (mysqli_connect_errno())
